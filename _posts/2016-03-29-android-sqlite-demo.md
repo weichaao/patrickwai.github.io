@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 创建数据库
         SQLiteOpenHelper helper = new DatabaseHelper(this, "demo", null, 1);
-        // 获取可写入数据库
+        // 获取数据库实例
         final SQLiteDatabase database = helper.getWritableDatabase();
 
         findViewById(R.id.insert).setOnClickListener(new View.OnClickListener() {
